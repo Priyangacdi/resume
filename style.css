@@ -1,0 +1,147 @@
+/*INDEX STYLES (FORMS)*/
+
+.regform{
+  text-align: center;
+  width: 400px;
+  height: 400px;
+  margin-top: 120px;
+  font-family: algerian;
+  background-color:  #aed6f1 ;
+  border: 3px solid #21618c ;
+  border-radius: 20%;
+  margin-left: 100px;
+}
+h3{
+  font-size: 30px;
+  color: #21618c;
+}
+input{
+  text-align: center;
+  color: #21618c;
+}
+.center{
+  text-align: center;
+
+  margin-top: 200px;
+  margin-right: 500px;
+}
+.form{
+  width: 300px;
+  font-family: algerian;
+  height: 250px;
+  border-radius: 25%;
+  border: 3px solid #138d75;
+  background-color:  #a9dfbf;
+  margin-left: 100px;
+}
+h1{
+  font-size: 30px;
+  color: #138d75;
+}
+.liclr{
+  text-align: center;
+  color: #138d75;
+}
+
+/* RESUME STYLES */
+
+  .header{
+    text-align: center;
+    font-size: 24px;
+    font-family: monospace;
+  }
+  .hdr_clr{
+    color: #16a085;
+    font-weight: 900;
+  }
+  .curve{
+    width:500px;
+    height:100px;
+    border:solid 5px #000;
+    border-color:#566573 transparent transparent transparent;
+    border-radius: 50%/100px 100px 100px 0px;
+    margin-left: 330px;
+  }
+  .pad-30{
+    padding: 30px;
+  }
+  .pad-10{
+    padding: 10px;
+  }
+  .border{
+    border-top: 4px solid #16a085;
+    border-right: 4px solid #16a085;
+    border-bottom: 4px solid #16a085;
+    border-left: 4px solid  #16a085;
+    margin: 40px;
+  }
+  .clr{
+    color:  #566573 ;
+  }
+  .pro{
+    line-height: 3px;
+    width: 500px;
+    padding-left:100px;
+  }
+  .img{
+    width: 180px;
+    height: 180px;
+    float: right;
+    position: absolute;
+    margin-top: 150px;
+    top:0;
+    right: 100;
+    border-radius: 50%;
+    border: 3px solid #16a085;
+    display: inline-block;
+  }
+  .eca{
+    width: 400px;
+  }
+  .vl {
+    margin-left: 400px;
+    border-left: 4px solid #16a085;
+    height: 975px;
+    top:385;
+    position: absolute;
+  }
+  .hl{
+    width: 100%;
+    border-top: 4px solid #16a085;
+  }
+  .dot{
+    height: 15px;
+    width: 15px;
+    background-color: #16a085;
+    border-radius: 50% ;
+    border: 1px solid #16a085;
+    display: inline-block;
+  }
+  .circle{
+    margin-left: 2px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50% ;
+    border: 1px solid #16a085;
+    display: inline-block;
+  }
+  .obj{
+    padding: 10px;
+    padding-left: 20px;
+    color: #566573;
+  }
+  .size{
+    font-size: 24px;
+  }
+  .line{
+    border: 2px solid #566573;
+    width: 50px;
+    text-align: center;
+    padding: 0px;
+  }
+  .sign{
+    bottom: -840;
+    right: 150;
+    float: right;
+    position: absolute;
+  }
