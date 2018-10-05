@@ -1,0 +1,146 @@
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title> Index </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+  tr{
+    margin-top: 120px;
+  }
+  </style>
+  <script type="text/javascript">
+    function regvalid(){
+      if(document.regform.firstname.value==""){
+        alert("Please enter your first name");
+        return false;
+      }
+      if (document.regform.firstname.value.length >= 20) {
+        alert("firstname must have less than 20 characters")
+      }
+      if(document.regform.lastname.value==""){
+        alert("Please enter your last name");
+        return false;
+      }
+      if (document.regform.lastname.value.length >= 20) {
+        alert("lastname must have less than 20 characters")
+      }
+      if(document.regform.gender.value==""){
+        alert("Please choose your gender");
+        return false;
+      }
+      if(document.regform.nationality.value==""){
+        alert("Please select your nationality");
+        return false;
+      }
+      if(document.regform.email.value==""){
+        alert("Please enter your email id");
+        return false;
+      }
+      //email validation starts
+      var email = document.regform.email.value;
+      at_position = email.indexOf("@");
+      dot_position = email.lastIndexOf(".");
+      if (at_position < 1 || ( dot_position - at_position < 2 ))
+      {
+         alert("Please enter correct email ID");
+         return false;
+      }
+      //email validation ends
+      if(document.regform.age.value==""){
+        alert("Please enter your age");
+        return false;
+      }
+      if(document.regform.dob.value==""){
+        alert("Please enter your date of birth");
+        return false;
+      }
+      if(document.regform.username.value==""){
+        alert("Please enter your user name");
+        return false;
+      }
+      if(document.regform.password.value==""){
+        alert("Please enter your password");
+        return false;
+      }
+    }
+    function logvalid(){
+      if(document.logform.username.value==""){
+        alert("Please enter your user name");
+        return false;
+      }
+      if(document.logform.password.value==""){
+        alert("Please enter your password");
+        return false;
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="row">
+    <div align="center" class=" regbg col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <form class="regform" action="resume.html" name="regform" onsubmit="return(regvalid());">
+        <div align="center">
+          <h3 class="reg">Registration Form</h3>
+          <table>
+            <tr class="regtr">
+              <td>First name</td>
+              <td>: <input type="text" name="firstname" placeholder="max length of 20"> </td>
+            </tr>
+            <tr class="regtr">
+              <td > Last name </td>
+              <td>: <input type="text" name="lastname" placeholder="max length of 20"> </td>
+            </tr>
+            <tr class="regtr">
+              <td> Gender </td>
+              <td>: <input type="radio" name="gender"> Male
+                    <input type="radio" name="gender"> Female </td>
+            </tr>
+            <tr class="regtr">
+              <td> Nationality </td>
+              <td>: <select name="nationality" placeholder="selct ur nationality">
+                      <option value="India">India </option>
+                      <option value="Australia"> Australia </option>
+                      <option value="us"> US </option>
+                      <option value="uk"> UK </option>
+                    </select> </td>
+            </tr>
+            <tr class="regtr">
+              <td> Email id </td>
+              <td>: <input type="text" name="email" placeholder="enter ur email id" > </td>
+            </tr>
+            <tr class="regtr">
+              <td> Age </td>
+              <td>: <input type="number" name="age" placeholder="enter ur age" pattern="[0-9]{2,3}" > </td>
+            </tr>
+            <tr class="regtr">
+              <td> Date of Birth </td>
+              <td>: <input type="date" name="dob" placeholder="enter ur dob"> </td>
+            </tr>
+            <tr>
+              <td> User name </td>
+              <td>: <input type="text" name="username" placeholder="enter ur username" ></td>
+            </tr>
+            <tr class="regtr">
+              <td> Password </td>
+              <td> : <input type="password" name="password" placeholder="enter ur password"> </td>
+            </tr>
+            <tr class="regtr">
+              <td>  </td>
+              <td> <input style="margin-left:30px;" type="submit" name="submit" value="Submit"> </td>
+            </tr>
+          </table>
+        </div>
+      </form>
+    </div>
+    <div class="logbg col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <form class="form center" name="logform" action="resume.html" onsubmit="return(logvalid());">
+        <h1> Login Form </h1>
+        <input class="liclr" type="text" name="username" placeholder="enter ur username" ><br><br>
+        <input class="liclr" type="password" name="password" placeholder="enter ur password"> <br> <br>
+        <input class="liclr" type="submit" name="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</body>
+</html>
